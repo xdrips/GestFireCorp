@@ -1,0 +1,47 @@
+<html>
+<head>
+<title> OnTimeReplacement </title>
+</head>
+<body>
+<p align=center> Pedido de Permutas </p>
+
+<form action=ppermutas.php method="POST">
+<p>Bombeiro (a): <input type=text size=30 name=nome>(Que pediu troca)</p> 
+<p>Serviço para o qual estava escalado
+<select>
+  <option value="Diurno">Diurno</option>
+  <option value="Nocturno">Nocturno</option>
+</select> Data <input type=text size=2 name=data1>/<input type=text size=2 name=data2>/<input type=text size=4 name=data3></p>
+<p>O chefe de piquete tomou conhecimento?
+<select>
+  <option value="Sim">Sim</option>
+  <option value="Não">Não</option></p>
+  
+  <p>Serviço que irei fazer
+<select>
+  <option value="Diurno">Diurno</option>
+  <option value="Nocturno">Nocturno</option>
+</select> Data <input type=text size=2 name=data11>/<input type=text size=2 name=data22>/<input type=text size=4 name=data33></p>
+<p>Bombeiro (a): <input type=text size=30 name=nome2>(Que aceitou a troca)</p> 
+
+<p>Motivo da Troca: <input type=text size=200 name=motivo>
+
+<td>
+</td>
+<td>
+<p align=center><input type=submit name= botao1 value=Enviar> </p>
+</td>
+<td>
+<p align=center> <input type=reset name= botao2 value=Limpar> </p>
+</td>
+<td>
+<p align=center><button onclick="goBack()">Voltar</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</td>
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> OnTimeReplacement </title>
+</head>
+<body>
+<p align=center> Justificação de Faltas </p>
+
+<form action=justfaltas.php method="POST">
+<p>Bombeiro (a): <input type=text size=30 name=nome></p> 
+
+Faltei a: <p><input type="checkbox" name="pd" value="Piquete Diurno"> Piquete Diurno</p>
+				<input type="checkbox" name="pn" value="Piquete Nocturno"> Piquete Nocturno</p>
+				<input type="checkbox" name="ig" value="Instrução Geral"> Instrução Geral</p>
+				<input type="checkbox" name="is" value="Instrução Secção"> Instrução Secção</p>
+<p>Data <input type=text size=2 name=data1>/<input type=text size=2 name=data2>/<input type=text size=4 name=data3></p>
+<p>Motivo da Falta: <input type=text size=200 name=motivo></p>
+<td>
+</td>
+<td>
+<p align=center><input type=submit name= botao1 value=Enviar> </p>
+</td>
+<td>
+<p align=center> <input type=reset name= botao2 value=Limpar> </p>
+</td>
+<td>
+<p align=center><button onclick="goBack()">Voltar</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</td>
+</form>
+</body>
+</html>
